@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vôlei na ETEC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+
+        main {
+            max-width: 800px; /* Largura máxima */
+            margin: 20px auto; /* Centraliza o conteúdo */
+            padding: 20px;
+            background: white; /* Fundo branco */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333; /* Cor do título da seção */
+            text-align: center; /* Centraliza o título */
+        }
+
+        .section-description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #666; /* Cor da descrição */
+            text-align: center; /* Centraliza a descrição */
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column; /* Alinha os elementos em coluna */
+            gap: 15px; /* Espaço entre os elementos */
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold; /* Negrito para os rótulos */
+            margin-bottom: 5px; /* Espaço abaixo do rótulo */
+        }
+
+        input, textarea {
+            padding: 10px; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda do campo */
+            border-radius: 5px; /* Cantos arredondados */
+            font-size: 1em; /* Tamanho da fonte */
+            transition: border-color 0.3s; /* Efeito de transição */
+        }
+
+        input:focus, textarea:focus {
+            border-color: #007bff; /* Cor da borda ao focar */
+            outline: none; /* Remove o contorno padrão */
+        }
+
+        .submit-button {
+            background-color: #28a745; /* Cor do botão */
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s; /* Efeito de transição */
+        }
+
+        .submit-button:hover {
+            background-color: #218838; /* Cor ao passar o mouse */
+            transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+        }
+
+        .contact-info {
+            margin-top: 20px; /* Espaço acima das informações de contato */
+            text-align: center; /* Centraliza o texto */
+            color: #666; /* Cor do texto */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aprenda.html">Aprenda</a></li>
+                    <li><a href="Interetec.html">Interetec</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contato">
+            <h1 class="section-title">Contato</h1>
+            <p class="section-description">Entre em contato conosco preenchendo o formulário abaixo. Tire suas dúvidas ou Dê o seu Feedback.</p>
+
+            <form class="contact-form" action="https://formspree.io/f/mldeewav"  method="POST">
+                <div class="form-field">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="form-field">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+            
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+            
+            <div class="contact-info">
+                </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+

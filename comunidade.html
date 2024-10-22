@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - Vôlei na ETEC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte do site */
+            background: linear-gradient(to bottom, #87CEEB, #F5F5F5); /* Gradiente de fundo */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimento padrão */
+            color: #333; /* Cor padrão do texto */
+        }
+
+        main {
+            max-width: 800px; /* Largura máxima */
+            margin: 20px auto; /* Centraliza o conteúdo */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do container */
+            position: relative; /* Para posicionar a imagem de fundo */
+            overflow: hidden; /* Oculta qualquer conteúdo que saia dos limites do main */
+        }
+
+        /* Imagem de fundo */
+        #comunidade::before {
+            content: "";
+            background-image: url('images/comunidade.jpg'); /* Caminho da imagem */
+            background-size: cover; /* Cobre todo o espaço disponível */
+            background-position: center; /* Centraliza a imagem */
+            position: absolute; /* Posiciona absolutamente dentro do main */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.3; /* Opacidade da imagem de fundo */
+            z-index: 1; /* Coloca a imagem abaixo do conteúdo */
+        }
+
+        .text-background {
+            background: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
+            padding: 20px; /* Preenchimento */
+            border-radius: 10px; /* Cantos arredondados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra do container */
+            position: relative; /* Para que o texto fique acima da imagem de fundo */
+            z-index: 2; /* Coloca o fundo acima da imagem */
+        }
+
+        .section-title {
+            font-size: 2.5em; /* Tamanho do título da seção */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+            color: #06b800; /* Cor do título */
+            text-align: center; /* Centraliza o título */
+        }
+
+        .section-description {
+            font-size: 1.2em; /* Tamanho da descrição */
+            margin-bottom: 20px; /* Espaço abaixo da descrição */
+            color: #000000; /* Cor da descrição */
+            text-align: center; /* Centraliza a descrição */
+        }
+
+        .whatsapp-container {
+            text-align: center; /* Centraliza o texto */
+            margin: 20px 0; /* Espaço entre elementos */
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* Cor do botão do WhatsApp */
+            color: white; /* Cor do texto do botão */
+            padding: 15px 25px; /* Preenchimento do botão */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            text-decoration: none; /* Remove sublinhado */
+            font-size: 1.5em; /* Tamanho da fonte do botão */
+            transition: background-color 0.3s, transform 0.3s; /* Efeito de transição */
+            display: inline-block; /* Permite margens */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+            position: relative; /* Para que o botão esteja acima da imagem */
+            z-index: 2; /* Coloca o botão acima da imagem de fundo */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Cor ao passar o mouse */
+            transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aprenda.html">Aprenda</a></li>
+                <li><a href="Interetec.html">Interetec</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="comunidade">
+            <div class="text-background">
+                <h1 class="section-title">Comunidade do WhatsApp</h1>
+                <p class="section-description">Participe da nossa comunidade no WhatsApp e fique por dentro das novidades,
+                    dicas e muito mais!</p>
+
+                <div class="whatsapp-container">
+                    <h2>Junte-se a nós!</h2>
+                    <p>Clique no botão abaixo para entrar na nossa comunidade de Vôlei!</p>
+                    <a href="https://chat.whatsapp.com/HFyD2UrkPRW9lqSds5zRtD" class="whatsapp-button">Entrar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

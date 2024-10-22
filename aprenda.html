@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos do Vôlei - Vôlei na ETEC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0; /* Remove qualquer padding do body */
+        }
+
+        header {
+            margin: 0;
+            padding: 0; /* Remove padding do header */
+        }
+        
+        main {
+            max-width: 800px; /* Largura máxima */
+            margin: 0 auto; /* Remove margem superior */
+            padding: 10px 20px; /* Reduz o padding interno do conteúdo */
+        }
+
+        .section-title {
+            font-size: 2.8em; /* Tamanho maior para o título */
+            margin: 10px 0 15px 0; /* Reduz a margem superior */
+            color: #ffffff; /* Cor mais vibrante */
+            text-align: center; /* Centraliza o título */
+            font-weight: bold; /* Negrito para destacar */
+            letter-spacing: 1px; /* Espaçamento entre letras */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+            border-bottom: 3px solid #000000; /* Linha embaixo do título */
+            padding-bottom: 10px; /* Espaçamento interno abaixo */
+        }
+
+        .section-description {
+            font-size: 1.2em;
+            margin: 10px 0 20px 0; /* Reduz a margem superior */
+            color: #555; /* Cor mais suave */
+            text-align: center; /* Centraliza a descrição */
+        }
+
+        .posts-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Reduz o espaçamento entre os posts */
+        }
+
+        .post-item {
+            background-color: white; /* Cor de fundo dos posts */
+            border: 1px solid #e1e1e1; /* Borda dos posts */
+            border-radius: 8px; /* Cantos arredondados */
+            padding: 20px; /* Espaçamento interno */
+            transition: transform 0.2s; /* Efeito de transição */
+        }
+
+        .post-item:hover {
+            transform: scale(1.02); /* Aumenta ao passar o mouse */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+        .post-item h3 {
+            font-size: 1.6em; /* Tamanho do título dos posts */
+            margin: 0; /* Remove margens */
+            color: #1e3a8a; /* Cor do título do post */
+        }
+
+        .post-item p {
+            color: #555; /* Cor do texto do post */
+        }
+
+        .post-item a {
+            text-decoration: none;
+            color: #1e3a8a; /* Cor dos links */
+            font-weight: bold; /* Negrito nos links */
+        }
+
+        .post-item a:hover {
+            text-decoration: underline; /* Efeito ao passar o mouse no link */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aprenda.html">Aprenda</a></li>
+                    <li><a href="Interetec.html">Interetec</a></li>
+                    <li><a href="comunidade.html">Comunidade</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="posts">
+            <h1 class="section-title">Fundamentos do Vôlei</h1>
+            <p class="section-description">Aprenda os principais fundamentos do vôlei. Clique em cada tópico para explorar mais sobre a técnica e assista aos vídeos tutoriais!</p>
+
+            <div class="posts-container">
+                <div class="post-item">
+                    <h3><a href="ataque.html">⚡ Ataque</a></h3>
+                    <p>Saiba como realizar um ataque poderoso e eficaz.</p>
+                </div>
+
+                <div class="post-item">
+                    <h3><a href="bloqueio.html">🛡️ Bloqueio</a></h3>
+                    <p>Descubra como bloquear ataques com precisão.</p>
+                </div>
+
+                <div class="post-item">
+                    <h3><a href="saque.html">🎯 Saque</a></h3>
+                    <p>Explore os diferentes tipos de saque e suas estratégias.</p>
+                </div>
+
+                <div class="post-item">
+                    <h3><a href="levantamento.html">🤲 Levantamento</a></h3>
+                    <p>Aprenda a preparar o ataque com um levantamento perfeito.</p>
+                </div>
+
+                <div class="post-item">
+                    <h3><a href="recepcao.html">📥 Recepção</a></h3>
+                    <p>Melhore suas técnicas de recepção e controle de bola.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

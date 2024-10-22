@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #87CEEB, #F5F5F5);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha em telas pequenas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0c040; /* Destaque ao passar o mouse */
+}
+
+/* Seção Principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Seção Sobre */
+#about {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: #3D5C99; /* Azul */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    color: #333; /* Texto escuro */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-content a {
+    color: #FFB300; /* Amarelo */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #about {
+        padding: 15px;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens do menu em coluna em telas pequenas */
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento maior entre os itens no menu */
+    }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
